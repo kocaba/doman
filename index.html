@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Primary Meta -->
-  <title>Domain Name Generator — Find Available Domains Instantly</title>
-  <meta name="description" content="Generate 50+ creative domain name ideas from any keyword and check availability in real time. Free domain name generator with RDAP-powered availability check."/>
-  <meta name="keywords" content="domain name generator, domain availability checker, free domain names, domain ideas, domain search"/>
+  <title>Генератор доменних імен — Перевір доступність домену миттєво</title>
+  <meta name="description" content="Генеруй 50+ варіантів доменних імен з будь-якого ключового слова та перевіряй доступність в реальному часі. Безкоштовний генератор доменів з RDAP-перевіркою."/>
+  <meta name="keywords" content="генератор доменів, перевірка доступності домену, безкоштовні домени, ідеї для домену, пошук домену"/>
   <link rel="canonical" href="https://domaingen.pages.dev/"/>
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://domaingen.pages.dev/"/>
-  <meta property="og:title"       content="Domain Name Generator — Find Available Domains Instantly"/>
-  <meta property="og:description" content="Generate creative domain names from any keyword and check real-time availability. 50+ ideas, multiple TLDs, zero sign-up."/>
+  <meta property="og:title"       content="Генератор доменних імен — Перевір доступність миттєво"/>
+  <meta property="og:description" content="Генеруй творчі доменні імена з будь-якого слова та перевіряй доступність в реальному часі. 50+ ідей, безліч TLD, без реєстрації."/>
   <meta property="og:image"       content="https://domaingen.pages.dev/og.png"/>
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image"/>
-  <meta name="twitter:title"       content="Domain Name Generator"/>
-  <meta name="twitter:description" content="Find available domain names instantly. No sign-up required."/>
+  <meta name="twitter:title"       content="Генератор доменних імен"/>
+  <meta name="twitter:description" content="Знайди вільний домен миттєво. Без реєстрації."/>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
@@ -37,18 +37,17 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Domain Name Generator",
+    "name": "Генератор доменних імен",
     "url": "https://domaingen.pages.dev/",
-    "description": "Generate creative domain names from any keyword and check availability in real time.",
+    "description": "Генеруй творчі доменні імена з будь-якого ключового слова та перевіряй доступність в реальному часі.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Any",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "UAH" }
   }
   </script>
 </head>
 
 <body>
-  <!-- Animated background orbs -->
   <div class="bg-orbs" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -56,41 +55,41 @@
   </div>
 
   <div class="wrapper">
-    <!-- ── Navbar ───────────────────────────────────────── -->
+    <!-- ── Navbar ── -->
     <header>
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <a href="/" class="nav-logo" aria-label="DomainGen home">
+      <nav class="navbar" role="navigation" aria-label="Головна навігація">
+        <a href="/" class="nav-logo" aria-label="DomainGen — головна">
           <div class="nav-logo-icon" aria-hidden="true">.io</div>
           <span>DomainGen</span>
         </a>
         <div class="nav-actions">
-          <span class="nav-badge" aria-label="Free tool">Free Tool</span>
-          <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+          <span class="nav-badge" aria-label="Безкоштовний інструмент">Безкоштовно</span>
+          <button class="theme-btn" id="themeBtn" aria-label="Перемкнути тему" title="Перемкнути тему">🌙</button>
         </div>
       </nav>
     </header>
 
-    <!-- ── Hero ─────────────────────────────────────────── -->
+    <!-- ── Hero ── -->
     <section class="hero" aria-labelledby="heroHeading">
-      <div class="hero-eyebrow" aria-label="Powered by RDAP">
+      <div class="hero-eyebrow" aria-label="Працює через RDAP">
         <span class="hero-eyebrow-dot" aria-hidden="true"></span>
-        Powered by RDAP · No sign-up required
+        Перевірка через RDAP · Без реєстрації
       </div>
 
       <h1 id="heroHeading">
-        Domain Name<br/>
-        <span>Generator</span>
+        Генератор<br/>
+        <span>доменних імен</span>
       </h1>
 
       <p class="hero-sub">
-        Enter any keyword and instantly generate 50+ creative domain name ideas.
-        Real-time availability checks across multiple TLDs — completely free.
+        Введи будь-яке слово або бренд — отримай 50+ варіантів доменів миттєво.
+        Перевірка доступності в реальному часі по кількох TLD — повністю безкоштовно.
       </p>
 
       <!-- Search box -->
       <div class="search-card" role="search">
         <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <label for="keyword" class="sr-only">Enter keyword or brand name</label>
+        <label for="keyword" class="sr-only">Введи ключове слово або назву бренду</label>
         <input
           type="text"
           id="keyword"
@@ -98,136 +97,127 @@
           autocorrect="off"
           autocapitalize="off"
           spellcheck="false"
-          placeholder="pizza, travel, fintech, yourname…"
+          placeholder="pizza, travel, fintech, mybrand…"
           maxlength="40"
-          aria-label="Keyword or brand name"
+          aria-label="Ключове слово або назва бренду"
         />
-        <button class="btn-generate" id="generateBtn" aria-label="Generate domain names">
+        <button class="btn-generate" id="generateBtn" aria-label="Згенерувати домени">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Generate Domains
+          Згенерувати домени
         </button>
       </div>
 
       <!-- Quick stats -->
-      <div class="stats-strip" role="list" aria-label="Service stats">
+      <div class="stats-strip" role="list" aria-label="Статистика сервісу">
         <div class="stat" role="listitem">
           <div class="stat-num">50+</div>
-          <div class="stat-lbl">Domains generated</div>
+          <div class="stat-lbl">Варіантів доменів</div>
         </div>
         <div class="stat" role="listitem">
           <div class="stat-num">8</div>
-          <div class="stat-lbl">TLD categories</div>
+          <div class="stat-lbl">Категорій TLD</div>
         </div>
         <div class="stat" role="listitem">
           <div class="stat-num">RDAP</div>
-          <div class="stat-lbl">Availability check</div>
+          <div class="stat-lbl">Перевірка доступності</div>
         </div>
         <div class="stat" role="listitem">
           <div class="stat-num">Free</div>
-          <div class="stat-lbl">No sign-up needed</div>
+          <div class="stat-lbl">Без реєстрації</div>
         </div>
       </div>
     </section>
 
-    <!-- ── Main ──────────────────────────────────────────── -->
+    <!-- ── Main ── -->
     <main class="main" id="main">
 
-      <!-- ── Domain Extensions Selector ─────────────────── -->
-      <div class="ext-block" id="extBlock" aria-label="Domain extension selector">
+      <!-- ── Domain Extensions Selector ── -->
+      <div class="ext-block" id="extBlock" aria-label="Вибір доменних зон">
 
-        <!-- Collapsed header (always visible) -->
         <div class="ext-header" id="extBlockHeader" role="button" tabindex="0"
              aria-expanded="false" aria-controls="extPanel">
           <div class="ext-header-left">
             <div class="ext-header-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <div>
-              <div class="ext-header-title">Domain Extensions</div>
-              <div class="ext-header-sub" id="extHeaderSub">Popular TLDs (5) selected</div>
+              <div class="ext-header-title">Доменні зони</div>
+              <div class="ext-header-sub" id="extHeaderSub">Популярні TLD (5) вибрано</div>
             </div>
           </div>
           <div class="ext-header-right">
-            <span class="ext-count-badge" id="extCountBadge">5 zones selected</span>
+            <span class="ext-count-badge" id="extCountBadge">5 зон вибрано</span>
             <span class="ext-chevron" aria-hidden="true">▼</span>
           </div>
         </div>
 
-        <!-- Expandable panel -->
-        <div class="ext-panel" id="extPanel" role="region" aria-label="Extension categories">
+        <div class="ext-panel" id="extPanel" role="region" aria-label="Категорії доменних зон">
 
-          <!-- Toolbar: search + global actions -->
           <div class="ext-toolbar">
             <div class="ext-search-wrap">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
               </svg>
               <input type="text" id="extSearch" class="ext-search"
-                     placeholder="Search extensions… (.io, .tech, .shop)"
-                     aria-label="Search domain extensions"/>
+                     placeholder="Пошук зон… (.io, .tech, .shop)"
+                     aria-label="Пошук доменних зон"/>
             </div>
             <div class="ext-global-btns">
-              <button class="ext-global-btn" id="btnSelectAll">Select All</button>
-              <button class="ext-global-btn danger" id="btnClearAll">Clear All</button>
-              <button class="ext-global-btn reset"  id="btnReset">Reset Default</button>
+              <button class="ext-global-btn" id="btnSelectAll">Вибрати всі</button>
+              <button class="ext-global-btn danger" id="btnClearAll">Очистити</button>
+              <button class="ext-global-btn reset"  id="btnReset">За замовчуванням</button>
             </div>
           </div>
 
-          <!-- Sticky quick-pick chips -->
-          <div class="ext-sticky" id="extSticky" role="group" aria-label="Quick TLD selection">
-            <!-- built by JS -->
+          <div class="ext-sticky" id="extSticky" role="group" aria-label="Швидкий вибір TLD">
           </div>
 
-          <!-- Category accordions -->
           <div class="ext-categories" id="extCategories" role="list">
-            <!-- built by JS -->
           </div>
 
-        </div><!-- /ext-panel -->
-      </div><!-- /ext-block -->
+        </div>
+      </div>
 
-      <!-- ── Results Section ────────────────────────────── -->
-      <section class="results-section" id="resultsSection" aria-label="Domain results" aria-live="polite">
+      <!-- ── Results Section ── -->
+      <section class="results-section" id="resultsSection" aria-label="Результати доменів" aria-live="polite">
         <div class="results-header">
           <div>
-            <h2 class="results-title">Results</h2>
+            <h2 class="results-title">Результати</h2>
             <p class="results-meta" id="resultsMeta"></p>
           </div>
-          <div class="controls-row" role="toolbar" aria-label="Results controls">
+          <div class="controls-row" role="toolbar" aria-label="Керування результатами">
             <button class="btn-filter" id="filterBtn" aria-pressed="false">
-              <span aria-hidden="true">✅</span> Available only
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Тільки вільні
             </button>
-            <label for="sortSelect" class="sr-only">Sort results</label>
-            <select class="sort-select" id="sortSelect" aria-label="Sort domains">
-              <option value="default">Default order</option>
-              <option value="az">A → Z</option>
-              <option value="za">Z → A</option>
-              <option value="avail">Available first</option>
+            <label for="sortSelect" class="sr-only">Сортування</label>
+            <select class="sort-select" id="sortSelect" aria-label="Сортувати домени">
+              <option value="default">За замовчуванням</option>
+              <option value="az">А → Я</option>
+              <option value="za">Я → А</option>
+              <option value="avail">Спочатку вільні</option>
             </select>
           </div>
         </div>
 
-        <div class="table-wrap" id="tableWrap" role="table" aria-label="Domain availability table">
-          <!-- skeleton → rows injected by JS -->
+        <div class="table-wrap" id="tableWrap" role="table" aria-label="Таблиця доступності доменів">
         </div>
       </section>
 
-    </main><!-- /main -->
+    </main>
 
-    <!-- ── Footer ────────────────────────────────────────── -->
+    <!-- ── Footer ── -->
     <footer>
       <p>
-        &copy; 2026 DomainGen · Built with ♥ · Availability data via
+        &copy; 2026 DomainGen · Зроблено з ♥ в Україні · Дані про доступність через
         <a href="https://www.icann.org/rdap" target="_blank" rel="noopener">RDAP</a>
-        · <a href="/sitemap.xml">Sitemap</a>
+        · <a href="/sitemap.xml">Карта сайту</a>
       </p>
     </footer>
   </div>
 
-  <!-- Toast container -->
   <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
 
-  <!-- Visually hidden text for screen readers -->
   <style>.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}</style>
 
   <script src="/script.js" defer></script>
