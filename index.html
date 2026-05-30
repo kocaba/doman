@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Primary Meta -->
+  <title>Domain Name Generator — Find Available Domains Instantly</title>
+  <meta name="description" content="Generate 50+ creative domain name ideas from any keyword and check availability in real time. Free domain name generator with RDAP-powered availability check."/>
+  <meta name="keywords" content="domain name generator, domain availability checker, free domain names, domain ideas, domain search"/>
+  <link rel="canonical" href="https://domaingen.pages.dev/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://domaingen.pages.dev/"/>
+  <meta property="og:title"       content="Domain Name Generator — Find Available Domains Instantly"/>
+  <meta property="og:description" content="Generate creative domain names from any keyword and check real-time availability. 50+ ideas, multiple TLDs, zero sign-up."/>
+  <meta property="og:image"       content="https://domaingen.pages.dev/og.png"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Domain Name Generator"/>
+  <meta name="twitter:description" content="Find available domain names instantly. No sign-up required."/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"/>
+
+  <link rel="stylesheet" href="/style.css"/>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Domain Name Generator",
+    "url": "https://domaingen.pages.dev/",
+    "description": "Generate creative domain names from any keyword and check availability in real time.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="wrapper">
+    <!-- ── Navbar ───────────────────────────────────────── -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="/" class="nav-logo" aria-label="DomainGen home">
+          <div class="nav-logo-icon" aria-hidden="true">.io</div>
+          <span>DomainGen</span>
+        </a>
+        <div class="nav-actions">
+          <span class="nav-badge" aria-label="Free tool">Free Tool</span>
+          <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ── Hero ─────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero-eyebrow" aria-label="Powered by RDAP">
+        <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+        Powered by RDAP · No sign-up required
+      </div>
+
+      <h1 id="heroHeading">
+        Domain Name<br/>
+        <span>Generator</span>
+      </h1>
+
+      <p class="hero-sub">
+        Enter any keyword and instantly generate 50+ creative domain name ideas.
+        Real-time availability checks across multiple TLDs — completely free.
+      </p>
+
+      <!-- Search box -->
+      <div class="search-card" role="search">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <label for="keyword" class="sr-only">Enter keyword or brand name</label>
+        <input
+          type="text"
+          id="keyword"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="pizza, travel, fintech, yourname…"
+          maxlength="40"
+          aria-label="Keyword or brand name"
+        />
+        <button class="btn-generate" id="generateBtn" aria-label="Generate domain names">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Generate Domains
+        </button>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="stats-strip" role="list" aria-label="Service stats">
+        <div class="stat" role="listitem">
+          <div class="stat-num">50+</div>
+          <div class="stat-lbl">Domains generated</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat-num">8</div>
+          <div class="stat-lbl">TLD categories</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat-num">RDAP</div>
+          <div class="stat-lbl">Availability check</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat-num">Free</div>
+          <div class="stat-lbl">No sign-up needed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Main ──────────────────────────────────────────── -->
+    <main class="main" id="main">
+
+      <!-- ── Domain Extensions Selector ─────────────────── -->
+      <div class="ext-block" id="extBlock" aria-label="Domain extension selector">
+
+        <!-- Collapsed header (always visible) -->
+        <div class="ext-header" id="extBlockHeader" role="button" tabindex="0"
+             aria-expanded="false" aria-controls="extPanel">
+          <div class="ext-header-left">
+            <div class="ext-header-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+            <div>
+              <div class="ext-header-title">Domain Extensions</div>
+              <div class="ext-header-sub" id="extHeaderSub">Popular TLDs (5) selected</div>
+            </div>
+          </div>
+          <div class="ext-header-right">
+            <span class="ext-count-badge" id="extCountBadge">5 zones selected</span>
+            <span class="ext-chevron" aria-hidden="true">▼</span>
+          </div>
+        </div>
+
+        <!-- Expandable panel -->
+        <div class="ext-panel" id="extPanel" role="region" aria-label="Extension categories">
+
+          <!-- Toolbar: search + global actions -->
+          <div class="ext-toolbar">
+            <div class="ext-search-wrap">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+              <input type="text" id="extSearch" class="ext-search"
+                     placeholder="Search extensions… (.io, .tech, .shop)"
+                     aria-label="Search domain extensions"/>
+            </div>
+            <div class="ext-global-btns">
+              <button class="ext-global-btn" id="btnSelectAll">Select All</button>
+              <button class="ext-global-btn danger" id="btnClearAll">Clear All</button>
+              <button class="ext-global-btn reset"  id="btnReset">Reset Default</button>
+            </div>
+          </div>
+
+          <!-- Sticky quick-pick chips -->
+          <div class="ext-sticky" id="extSticky" role="group" aria-label="Quick TLD selection">
+            <!-- built by JS -->
+          </div>
+
+          <!-- Category accordions -->
+          <div class="ext-categories" id="extCategories" role="list">
+            <!-- built by JS -->
+          </div>
+
+        </div><!-- /ext-panel -->
+      </div><!-- /ext-block -->
+
+      <!-- ── Results Section ────────────────────────────── -->
+      <section class="results-section" id="resultsSection" aria-label="Domain results" aria-live="polite">
+        <div class="results-header">
+          <div>
+            <h2 class="results-title">Results</h2>
+            <p class="results-meta" id="resultsMeta"></p>
+          </div>
+          <div class="controls-row" role="toolbar" aria-label="Results controls">
+            <button class="btn-filter" id="filterBtn" aria-pressed="false">
+              <span aria-hidden="true">✅</span> Available only
+            </button>
+            <label for="sortSelect" class="sr-only">Sort results</label>
+            <select class="sort-select" id="sortSelect" aria-label="Sort domains">
+              <option value="default">Default order</option>
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
+              <option value="avail">Available first</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-wrap" id="tableWrap" role="table" aria-label="Domain availability table">
+          <!-- skeleton → rows injected by JS -->
+        </div>
+      </section>
+
+    </main><!-- /main -->
+
+    <!-- ── Footer ────────────────────────────────────────── -->
+    <footer>
+      <p>
+        &copy; 2026 DomainGen · Built with ♥ · Availability data via
+        <a href="https://www.icann.org/rdap" target="_blank" rel="noopener">RDAP</a>
+        · <a href="/sitemap.xml">Sitemap</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Visually hidden text for screen readers -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}</style>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

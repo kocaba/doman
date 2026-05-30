@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://domaingen.pages.dev/sitemap.xml
